@@ -1,0 +1,49 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-store" />
+<title>YAML.pm - Quote string '='</title>
+<link rel="prev" href="slide015.html" />
+<link rel="next" href="slide017.html" />
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bbslides.js"></script>
+<script src="js/navi.js"></script>
+<link rel="stylesheet" type="text/css" href="css/slides.css">
+<link rel="stylesheet" type="text/css" href="css/ansicolor.css">
+<link rel="stylesheet" type="text/css" href="css/yaml.css">
+</head>
+
+<body>
+<!--
+<div id="test"></div>
+-->
+<div id="bbslides-slide" class="bbslides-frame">
+<h1 id="node_1" class="bbslides-h1">YAML.pm - Quote string &#39;=&#39;</h1>
+<ul><li id="node_3">The equal sign is special in YAML.pm but wasn&#39;t quoted when dumping</li></ul>
+<div id="node_4" class="codebox">
+use YAML;
+my $data = { &#39;=&#39; =&gt; 23 };
+print Dump $data;
+# Before =&gt; =: 23
+# After  =&gt; &#39;=&#39;: 23
+</div>
+</div>
+<script type="text/javascript">
+
+var prev_page = 'slide015.html';
+var next_page = 'slide017.html';
+</script>
+<div id="bbslides-navi">
+Slide 16/36
+<a href="slide015.html" onclick="previous_step();return false">BACK</a>
+<a href="index.html">UP</a>
+<a href="slide017.html" onclick="next_step(); return false">NEXT</a>
+<span id="usage">next: ( space / -&gt; / page up ) | previous: ( backspace / &lt;- / page down ) |
+next page: ( shift + page down ) | previous page: ( shift + page up ) |
+index: ( arrow-up )</span>
+
+<br>
+<progress id="slide-progress" value="16" max="36"></progress>
+</div>
+</body>
+</html>

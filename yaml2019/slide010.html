@@ -1,0 +1,53 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Cache-Control" content="no-store" />
+<title>YAML.pm - Spaces in quoted hash keys</title>
+<link rel="prev" href="slide009.html" />
+<link rel="next" href="slide011.html" />
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/bbslides.js"></script>
+<script src="js/navi.js"></script>
+<link rel="stylesheet" type="text/css" href="css/slides.css">
+<link rel="stylesheet" type="text/css" href="css/ansicolor.css">
+<link rel="stylesheet" type="text/css" href="css/yaml.css">
+</head>
+
+<body>
+<!--
+<div id="test"></div>
+-->
+<div id="bbslides-slide" class="bbslides-frame">
+<h1 id="node_1" class="bbslides-h1">YAML.pm - Spaces in quoted hash keys</h1>
+<div id="node_2" class="codebox">use YAML;
+
+my $yaml = &lt;&lt;&#39;EOM&#39;;
+---
+- &quot;foo &quot;: bar
+- &quot;   baz&quot;: fuzz
+EOM
+Load $yaml;
+
+# Before ==&gt; Error
+</div>
+</div>
+<script type="text/javascript">
+register_animation('node_2', 10, 'appear', {});
+
+var prev_page = 'slide009.html';
+var next_page = 'slide011.html';
+</script>
+<div id="bbslides-navi">
+Slide 10/36
+<a href="slide009.html" onclick="previous_step();return false">BACK</a>
+<a href="index.html">UP</a>
+<a href="slide011.html" onclick="next_step(); return false">NEXT</a>
+<span id="usage">next: ( space / -&gt; / page up ) | previous: ( backspace / &lt;- / page down ) |
+next page: ( shift + page down ) | previous page: ( shift + page up ) |
+index: ( arrow-up )</span>
+
+<br>
+<progress id="slide-progress" value="10" max="36"></progress>
+</div>
+</body>
+</html>
